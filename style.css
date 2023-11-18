@@ -1,0 +1,282 @@
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* stylesheet */
+#root {
+    --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: unset;
+    background-color: #ffffff;
+}
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #6c1aa3), url(https://cutewallpaper.org/21/steam-vaporwave-backgrounds/Vaporwave-Steam-Backgrounds,-wallpaper-collections-at-.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+}
+
+ul li a:hover,
+.single-service a:hover {
+    background-color: #ffffff;
+    color: #6c1aa3;
+    border: solid 2px #6c1aa3;
+}
+
+.logo {
+    width: 120px;
+
+}
+
+
+.banner-text {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 15%;
+}
+
+.banner-text h1 {
+    font-size: 110px;
+    font-family: var(--font);
+    padding-bottom: 1%;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 4%;
+}
+
+
+
+banner-btn {
+    margin: 55px auto 0px;
+}
+
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline block;
+    margin: 10px;
+    padding: 12px;
+    color: white;
+    border: .5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: black;
+}
+
+
+
+
+.title-text {
+    text-align: center;
+    font-family: var(--font);
+    font-size: 40px;
+    color: #ffffff;
+    padding: 70px;
+    background-color: #6c1aa3;
+}
+
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color: #6c1aa3;
+    font-weight: bold;
+    font-style: initial;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+#service {
+    width: 100%;
+    padding: 70px 0;
+    background: #161616;
+}
+
+.service-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-service {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #161616;
+}
+
+.single-service h4 {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.single-service img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.single-service a {
+
+    background-color: #6c1aa3;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: solid 2px transparent;
+    border-radius: 12px;
+    transition: 0.3s;
+
+}
+
+/* .single-service a:hover {
+    background-color: #ffffff;
+    color: #6c1aa3;
+    border: solid 3px #6c1aa3;
+} */
+
+footer {
+    color: #ffffff;
+    background-color: #6c1aa3;
+    text-align: center;
+}
+
+@media (width < 750px) {
+
+    ul {
+        list-style-position: inside;
+        padding-left: 0;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 0px;
+        background-color: #6c1aa3;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav #check:checked~ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+        float: left;
+    }
+
+    nav .checkbox {
+        position: relative;
+        z-index: 99;
+        display: block;
+    }
+
+    .banner-text h1 {
+        padding-top: 40%;
+        font-size: 44px;
+    }
+
+    .banner-text p {
+        font-size: 13px;
+        padding-bottom: 40%;
+    }
+
+    .service-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .single-service a {
+
+        margin-bottom: 10%;
+
+    }
+}
