@@ -257,13 +257,14 @@ footer {
     }
 
     .banner-text h1 {
-        padding-top: 40%;
+        padding: 20% 10% 0%;
         font-size: 44px;
     }
 
     .banner-text p {
+        padding-inline: 10%;
+        margin-block: 5%;
         font-size: 13px;
-        padding-bottom: 40%;
     }
 
     .service-box {
@@ -271,12 +272,20 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin: auto;
+        /* margin-inline: 5%; */
     }
 
     .single-service a {
-
         margin-bottom: 10%;
-
     }
+    .single-service {
+        flex-basis: 48%;
+        text-align: center;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        color: #161616;
+         margin-inline: 5%;
+    }
+
+
 }
