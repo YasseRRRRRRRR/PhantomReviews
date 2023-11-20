@@ -211,11 +211,11 @@ banner-btn {
 
 }
 
-/* .single-service a:hover {
+.single-service a:hover {
     background-color: #ffffff;
     color: #6c1aa3;
     border: solid 3px #6c1aa3;
-} */
+}
 
 footer {
     color: #ffffff;
@@ -284,7 +284,7 @@ footer {
         border-radius: 7px;
         margin-bottom: 20px;
         color: #161616;
-         margin-inline: 5%;
+        margin-inline: 5%;
     }
 
 
