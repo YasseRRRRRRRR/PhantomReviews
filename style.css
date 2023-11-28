@@ -24,6 +24,7 @@ header {
     background-color: #602a85;
     opacity: 60%;
 }
+
 #banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), #6c1aa3), url(https://cutewallpaper.org/21/steam-vaporwave-backgrounds/Vaporwave-Steam-Backgrounds,-wallpaper-collections-at-.png);
     background-size: cover;
@@ -227,7 +228,26 @@ banner-btn {
 footer {
     color: #ffffff;
     background-color: #6c1aa3;
+    padding-top: 2rem;
+}
+
+.footer-title {
+    min-width: 210px;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: center;
     text-align: center;
+
+}
+
+.footer a {
+    color: #ffffff;
+    background-color: #6c1aa3;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 @media (width < 750px) {
@@ -285,6 +305,7 @@ footer {
     .single-service a {
         margin-bottom: 10%;
     }
+
     .single-service {
         flex-basis: 48%;
         text-align: center;
