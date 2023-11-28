@@ -17,6 +17,13 @@ body {
     background-color: #ffffff;
 }
 
+header {
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    background-color: #602a85;
+    opacity: 60%;
+}
 #banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), #6c1aa3), url(https://cutewallpaper.org/21/steam-vaporwave-backgrounds/Vaporwave-Steam-Backgrounds,-wallpaper-collections-at-.png);
     background-size: cover;
